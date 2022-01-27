@@ -1,0 +1,16 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\let\\Downloads\\javafx-sdk-17.0.2\\lib\\javafx.base.jar",
+        "c:\\Users\\let\\Downloads\\javafx-sdk-17.0.2\\lib\\javafx.controls.jar",
+        "c:\\Users\\let\\Downloads\\javafx-sdk-17.0.2\\lib\\javafx.fxml.jar",
+        "c:\\Users\\let\\Downloads\\javafx-sdk-17.0.2\\lib\\javafx.graphics.jar",
+        "c:\\Users\\let\\Downloads\\javafx-sdk-17.0.2\\lib\\javafx.media.jar",
+        "c:\\Users\\let\\Downloads\\javafx-sdk-17.0.2\\lib\\javafx.swing.jar",
+        "c:\\Users\\let\\Downloads\\javafx-sdk-17.0.2\\lib\\javafx.web.jar",
+        "c:\\Users\\let\\Downloads\\javafx-sdk-17.0.2\\lib\\javafx-swt.jar",
+        "External_Libraries/commons-logging-1.2.jar",
+        "External_Libraries/fontbox-2.0.23.jar",
+        "External_Libraries/pdfbox-2.0.23.jar"
+    ]
+}

@@ -226,7 +226,7 @@ public class Curriculum {
     public static Course getCourse(String code) {
         if (courses.containsKey(code)) {
             return courses.get(code);
-        } else if (code.matches("([A-Z]{2}\\d{3,4})")) {
+        } else if (code.matches("([A-Z]{2}\\d{3,4}\\w?)")) {
             return new Course(code, "unknown elective", 0, "");
         } else if (code.length() > 6) {
             // TODO: Handle international student transcripts differently

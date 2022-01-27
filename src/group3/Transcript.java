@@ -17,6 +17,7 @@ import org.apache.pdfbox.text.PDFTextStripper;
 
 import java.io.File;
 import java.io.IOException;
+import java.security.CodeSource;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
@@ -96,7 +97,7 @@ public class Transcript {
                 }
             }
 
-            if (s.matches("^([A-Z]{2}\\d{3,4})(.*)")) {
+            if (s.matches("^([A-Z]{2}\\d{3,4}\\w?)(.*)")) {
                 // Checks that the line starts with any two letters, followed by 3 or 4 numbers. (AA2020, course code)
                 transcriptEdited.add(s);
             }
