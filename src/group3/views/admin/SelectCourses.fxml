@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.ListView?>
+<VBox prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group3.views.admin.SelectCoursesController">
+    <HBox prefHeight="31.0" prefWidth="796.0" VBox.vgrow="ALWAYS">
+        <ChoiceBox fx:id="majors" onAction="#changed" prefHeight="30.0" prefWidth="138.0">
+            <HBox.margin>
+                <Insets left="5.0" />
+            </HBox.margin>
+        </ChoiceBox>
+        <ChoiceBox fx:id="terms" onAction="#changed" prefHeight="30.0" prefWidth="55.0">
+            <HBox.margin>
+                <Insets left="5.0" />
+            </HBox.margin>
+        </ChoiceBox>
+      <Label fx:id="status" prefHeight="26.0" prefWidth="59.0" text="Not Saved">
+         <HBox.margin>
+            <Insets left="440.0" right="10.0" />
+         </HBox.margin>
+      </Label>
+        <Button onAction="#save" prefHeight="30.0" prefWidth="102.0" text="Save Transcript" />
+    </HBox>
+    <HBox prefHeight="580.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+        <ListView fx:id="pane" maxHeight="560.0" maxWidth="445.0" minHeight="560.0" minWidth="445.0" prefHeight="560.0" prefWidth="445.0" />
+        <VBox prefHeight="560.0" prefWidth="355.0" HBox.hgrow="ALWAYS">
+            <HBox prefHeight="188.0" prefWidth="355.0">
+                <ListView fx:id="des" prefHeight="188.0" prefWidth="355.0" />
+            </HBox>
+            <HBox prefHeight="29.0" prefWidth="355.0">
+                <Label prefHeight="30.0" prefWidth="43.0" text="Grade:">
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                </Label>
+                <ChoiceBox fx:id="grade" prefHeight="30.0" prefWidth="71.0" />
+                <Button fx:id="add" onAction="#addCourse" prefHeight="30.0" prefWidth="78.0" text="Add Course">
+                    <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="remove" onAction="#removeCourse" prefHeight="30.0" prefWidth="101.0" text="Remove Course" />
+            </HBox>
+            <HBox prefHeight="318.0" prefWidth="355.0">
+                <ListView fx:id="trans" prefHeight="318.0" prefWidth="355.0" />
+            </HBox>
+        </VBox>
+    </HBox>
+</VBox>

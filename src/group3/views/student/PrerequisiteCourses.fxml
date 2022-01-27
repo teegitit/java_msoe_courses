@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="group3.views.student.PrerequisiteCoursesController">
+    <Pane VBox.vgrow="ALWAYS" fx:id="pane"/>
+</VBox>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group3.views.AdminController">
+    <children>
+        <HBox prefHeight="25.0">
+            <children>
+                <MenuBar HBox.hgrow="ALWAYS">
+                    <menus>
+                        <Menu text="File">
+                            <items>
+                                <MenuItem onAction="#exportPDF" text="Export" />
+                                <MenuItem text="Close" />
+                            </items>
+                        </Menu>
+                        <Menu text="Edit">
+                            <items>
+                                <MenuItem text="Delete" />
+                            </items>
+                        </Menu>
+                        <Menu text="Help">
+                            <items>
+                                <MenuItem text="About" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <ChoiceBox fx:id="viewSelection" prefWidth="150.0">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </ChoiceBox>
+            </children>
+        </HBox>
+        <Pane fx:id="viewPane" VBox.vgrow="ALWAYS" />
+    </children>
+</VBox>

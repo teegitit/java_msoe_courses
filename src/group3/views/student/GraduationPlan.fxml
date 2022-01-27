@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group3.views.student.GraduationPlanController">
+    <children>
+        <Pane fx:id="pane" prefHeight="600.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+            <children>
+                <HBox prefHeight="600.0" prefWidth="800.0" spacing="20.0">
+                    <children>
+                        <VBox fx:id="mainBox" prefHeight="600.0" prefWidth="500.0" spacing="10.0">
+                            <children>
+                                <HBox prefHeight="30.0" prefWidth="500.0" spacing="10.0">
+                                    <children>
+                                        <ChoiceBox fx:id="major" onAction="#update" prefHeight="30.0" prefWidth="150.0" />
+                                        <Button fx:id="updateButton" mnemonicParsing="false" onAction="#update" prefHeight="30.0" prefWidth="100.0" text="Update List" />
+                                        <Label fx:id="gradDate" prefHeight="30.0" prefWidth="250.0" text="Estimated graduation year" />
+                                    </children>
+                                </HBox>
+                                <HBox prefHeight="30.0" prefWidth="500.0">
+                                    <children>
+                                        <Label prefHeight="30.0" prefWidth="320.0" text="  Course Name" />
+                                        <Label prefHeight="30.0" prefWidth="100.0" text="  Offered In" />
+                                        <Label prefHeight="30.0" prefWidth="80.0" text="  Grade status" />
+                                    </children>
+                                </HBox>
+                                <ListView fx:id="list" onMouseClicked="#handleClickedCell" prefHeight="500.0" prefWidth="500.0" />
+                            </children>
+                        </VBox>
+                        <VBox spacing="10.0">
+                            <children>
+                                <Label prefHeight="30.0" prefWidth="300.0" />
+                                <HBox prefHeight="30" prefWidth="300" spacing="10.0">
+                                    <children>
+                                        <Label fx:id="electiveFor" prefHeight="30.0" prefWidth="200.0" text="Elective courses for:" />
+                                        <Button fx:id="output" prefWidth="100" prefHeight="30" text="Output" onAction="#outputGradPlan" />
+                                    </children>
+                                </HBox>
+                                <TextArea fx:id="electiveTextArea" layoutY="100.0" prefHeight="500.0" prefWidth="300.0" editable="false" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children></Pane>
+    </children>
+</VBox>

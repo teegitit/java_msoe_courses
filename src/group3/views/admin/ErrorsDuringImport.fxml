@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="605.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group3.views.admin.ErrorsDuringImport">
+     <ListView fx:id="pane" maxHeight="599.0" maxWidth="799.0" minHeight="560.0" minWidth="445.0" prefHeight="586.0" prefWidth="799.0" />
+</VBox>
