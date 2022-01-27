@@ -97,7 +97,7 @@ public class Transcript {
                 }
             }
 
-            if (s.matches("^([A-Z]{2}\\d{3,4}\\w?)(.*)")) {
+            if (s.matches("^([A-Z]{2}\\d{3,4}([A-Z]?))(.*)")) {
                 // Checks that the line starts with any two letters, followed by 3 or 4 numbers. (AA2020, course code)
                 transcriptEdited.add(s);
             }
@@ -132,6 +132,13 @@ public class Transcript {
             String courseCode = separated[0];
             if (!separated[separated.length-1].contains("RF")) {
                 String grade = editGrades(separated[separated.length - 1].replaceAll("[*0-9]", "").replace(".", ""));
+                if(courseCode.length() > 6){
+                    courseCode = courseCode.substring(0, 6);
+                }
+                if(courseCode.matches("^([A-Z]{2}\\d{3,4}[A-Z])(.*)")){
+                    System.out.println("length 3");
+                    courseCode = courseCode.substring(0, courseCode.length() - 1);
+                }
                 coursesTaken.add(courseCode + " " + grade);
                 courses.put(courseCode, grade);
             }
